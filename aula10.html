@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática Integradora Desenvolvimento de Software - aula 10</title>
+
+</head>
+
+<body>
+    <p>Valor 1 <input type="text" id="valor1"> <p> 
+    <br>
+       Valor 2 <input type="text" id="valor2">
+    <br>
+     <p> <button onclick="verifica()">Verificar</button> <button onclick="apaga()">Apagar</button> </p> 
+
+    <div id="num"></div>
+</body>
+
+</html>
+
+<script>
+
+    function verifica() {
+        var valor1 = document.getElementById("valor1");
+        var Valor2 = document.getElementById("valor2");
+        var soma = parseInt(valor1.value) + parseInt(valor2.value);
+
+            if(soma>=10){
+            num.innerHTML= parseInt(soma) + " é maior que 10";}
+
+            else{
+            num.innerHTML= parseInt(soma) + " é menor que 10";}
+    }
+
+    function apaga(){
+
+    document.getElementById("valor1").value = "";
+    document.getElementById("valor2").value = "";
+    document.getElementById("texto").innerHTML = "";
+}
+</script>

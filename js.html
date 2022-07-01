@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática Integradora Desenvolvimento de Software</title>
+
+</head>
+
+    <body>
+
+        <form method="get" width="200"></form>
+            <label for="nome">Nome:</label>
+            <input id="nome" type="text" placeholder="Seu nome" name="nome"> <br>
+            <label for="sobrenome">Sobrenome:</label>
+            <input id="sobrenome" type="text"  placeholder="Seu sobrenome" name="sobrenome"> <br>
+            <label for="email">E-mail:</label>
+            <input id="email" type="text"placeholder="Seu E-mail" name="email">
+        </form>
+            
+    <button onclick="registro()">Enviar</button>
+
+</body>
+</html>
+<script>
+    function registro () {
+    var nome = document.getElementById("nome").value
+    var sobrenome = document.getElementById("sobrenome").value
+    var email = document.getElementById("email").value
+
+    alert(`Nome: ${nome} / Sobrenome: ${sobrenome} / Email: ${email}`)
+
+    }
+
+</script>
+
+

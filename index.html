@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class="th">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática Integradora Desenvolvimento de Software</title>
+    <link href="css/estilo.css" rel="stylesheet">
+
+    <h1 class="th">Prática Integradora de Desenvolvimento de Software</h1>
+    <h2 class="th">Aula 4</h2>
+
+</head>
+    
+<body class="body">
+
+    <div id="lista">
+        <h2 class="h2">Lista de Serviços</h2>
+        <ul class="list">
+            <li>Criação de Sites</li>
+            <li>Criação de Sistemas para a Internet</li>
+            <li>Criação de Soluções Mobile</li>
+        </ul>
+    </div>
+
+    <div id="tabela"> 
+        <table class="table" id="table"
+            border="1" 
+            cellspacing="2"
+            height="150"
+            width="300"> 
+
+            <caption>Clientes</caption>
+
+            <thead>
+                <tr>
+                    <th>Empresa</th>
+                    <th>País</th>
+                    <th>Estado</th>
+                </tr>
+            
+            </thead>
+
+            <tbody>
+                <tr>
+                <td>HLJS</td>
+                <td>Alemanha e Akhein</td>
+                <td>TE</td>
+                </tr>
+                <tr>
+                    <td>Umbrela</td>
+                    <td colspan="2">EUA</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>Nome</td>
+                    <td colspan="2">Endereço</td>
+                </tr>
+            </tfoot>
+
+
+        </table>
+    </div>
+
+    <br>
+
+    <div class="contato-form">
+        <form name="form_cliente" method="get" width="200"></form>
+            <label for="name">Nome:</label>
+            <input name="name" type="text" maxlength="100" placeholder="Seu nome"> 
+    </div>
+    <div>
+        <label for="email">E-mail:</label>
+        <input name="email" type="text" maxlength="100" placeholder="Seu E-mail">
+    </div>
+    <div>
+        <label for="sexo">Sexo:</label>
+        <select value="sexo" id="sexo" size="1">
+            <option value="m" selected>Masculino</option>
+            <option value="f">Feminino</option>
+        </select>
+    </div>
+    <div>
+        <label for="obs">Observação</label><br>
+        <textarea name="obs" id="obs" cols="30" rows="3"></textarea>
+    </div>
+    <br>
+    <button type="submit" value="Enviar" name="Enviar">Enviar</button>
+    </form>
+   
+</body>
+</html>
